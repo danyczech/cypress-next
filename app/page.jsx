@@ -39,13 +39,13 @@ const reasonsCypressIsGreat = [
   },
 ]
 
-export default function Home() {
+export default function Home(){
   return (
     <main className={styles.main}>
-        <h1 className={styles.header}>Why Cypress?</h1>
-        <ul>
-          <Accordion items={reasonsCypressIsGreat} />
-        </ul>
-    </main>
-  )
-}
+      <h1 className={styles.header}>Why Cypress?</h1>
+
+    <ul>
+      <Accordion items={reasonsCypressIsGreat} />
+    </ul>
+  </main>
+)}

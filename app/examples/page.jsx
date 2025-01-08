@@ -8,7 +8,7 @@ const items = [
     summary: 'Example 1) Multi-page testing',
     details: `You can quite easily write tests across pages to better test
     entire user workflows. You can click on navigation buttons or use cy.visit().
-    You can also use cy.location("pathname").should("equal", "/some-path") to assert 
+    You can also use cy.location("pathname").should("equal", "/some-path") to assert
     you're in the correct location`,
     id: '1',
   },
@@ -32,17 +32,19 @@ const items = [
   },
 ]
 
-export default function ExamplesPage(){ 
-    return (
-        <main className={styles.main}>
-            <h1 className={styles.header}>
-                Examples
-            </h1>
-            <ItemsAccordion items={items} />
-            <div className={styles.postButton}>
-            <PostButton className={styles.postButton} />
-            </div>
-            <GrudgeList />
-        </main>
-    )
-}
+export default function ExamplesPage(){
+  return (
+    <main className={styles.main}>
+      <h1 className={styles.header}>
+        Examples
+      </h1>
+
+      <ItemsAccordion items={items} />
+
+      <div className={styles.postButton}>
+        <PostButton className={styles.postButton} />
+      </div>
+
+      <GrudgeList />
+    </main>
+)}
